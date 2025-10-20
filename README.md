@@ -1,4 +1,4 @@
-# Sudoku Solver 
+# Automated Sudoku Solver: Image Processing & Deep Learning Solution
 
 ## 📋 Overview
 This project implements a complete Sudoku puzzle solver using Image Processing and CNN Model. The system can take an image of a Sudoku puzzle, detect and extract the grid, recognize the digits using a trained neural network, solve the puzzle, and display the solution.
