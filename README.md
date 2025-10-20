@@ -1,7 +1,7 @@
-# Sudoku Solver - Computer Vision Project
+# Sudoku Solver 
 
 ## 📋 Overview
-This project implements a complete Sudoku puzzle solver using computer vision and deep learning. The system can take an image of a Sudoku puzzle, detect and extract the grid, recognize the digits using a trained neural network, solve the puzzle, and display the solution.
+This project implements a complete Sudoku puzzle solver using Image Processing and CNN Model. The system can take an image of a Sudoku puzzle, detect and extract the grid, recognize the digits using a trained neural network, solve the puzzle, and display the solution.
 
 ---
 
@@ -12,7 +12,7 @@ This project implements a complete Sudoku puzzle solver using computer vision an
 
 **Deep Learning Model**: Custom CNN architecture for digit recognition  
 **Dataset**: MNIST handwritten digits dataset  
-**Training**: 20 epochs with 99.86% validation accuracy  
+**Training**: 20 epochs  
 
 **Model Architecture**:
 - 3 convolutional blocks with BatchNorm and LeakyReLU
@@ -29,15 +29,15 @@ This project implements a complete Sudoku puzzle solver using computer vision an
 2. Grayscale conversion
 3. Gaussian blur for noise reduction
 4. Adaptive thresholding for binary image
-5. Perspective transformation to correct grid orientation
+5. Find largest contour, then perspective transformation to correct grid orientation
 
 ### 🔍 Phase 3: Digit Recognition
 ![Phase 3: Recognition](flow_diagrams/Phase_3.png)
 
 **Cell Extraction**: Isolate individual Sudoku cells  
-**Digit Classification**: Use trained CNN model to recognize digits  
 **Binary Processing**: Thresholding to enhance digit visibility  
-**Confidence**: High accuracy (>99%) on test dataset
+**Digit Classification**: Use trained CNN model to recognize digits  
+
 
 ### 🎯 Phase 4: Puzzle Solving & Result Display
 ![Phase 4: Solution](flow_diagrams/Phase_4.png)
